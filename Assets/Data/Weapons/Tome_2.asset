@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aa2adc92599fb4eb807cabed06c81c, type: 3}
+  m_Name: Tome_2
+  m_EditorClassIdentifier: 
+  <NumberOfAttacks>k__BackingField: 1
+  <WeaponName>k__BackingField: Fireball Tome
+  <WeaponDescription>k__BackingField: A tome that allows the user to throw a single
+    fireball
+  <PickupSprite>k__BackingField: {fileID: 1858772998, guid: a787ad60522155e428cfd22746459646,
+    type: 3}
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: 24531ec137faccc4889f79028f43b0b6,
+    type: 2}
+  componentDatas:
+  - rid: 6610870990842363968
+  - rid: 6610870990842363967
+  - rid: 520146342549389331
+  - rid: 520146092620513280
+  references:
+    version: 2
+    RefIds:
+    - rid: 520146092620513280
+      type: {class: WeaponSpriteData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponSpriteData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          AttackPhases:
+          - Name: Anticipation
+            Phase: 0
+            Sprites:
+            - {fileID: -132780541, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 2146786250, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1309584106, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1432296470, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 531816686, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -153958802, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1859282590, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -852532737, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -647958907, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1357004035, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -313323355, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 90824015, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+          - Name: Idle
+            Phase: 1
+            Sprites:
+            - {fileID: 531614692, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -568556756, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -959241018, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1825399136, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 2018332802, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+          - Name: Cancel
+            Phase: 3
+            Sprites:
+            - {fileID: 1047238384, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1668096193, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1912784202, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 0}
+            - {fileID: 0}
+          - Name: Action
+            Phase: 2
+            Sprites:
+            - {fileID: -1140062321, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -585201543, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1687487675, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -172381251, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1378864020, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 307294280, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1248258544, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 587454755, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1943174227, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -967953247, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+    - rid: 520146342549389331
+      type: {class: WeaponHoldData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponHoldData
+    - rid: 6610870990842363967
+      type: {class: AttackRangedData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: AttackRangedData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          debug: 0
+          AttackData:
+          - offset: {x: 0.64, y: 0.18}
+            direction: {x: 1, y: 0}
+            projectileData: {fileID: 11400000, guid: 981967b295f208e4cbf0375ab31d5b96,
+              type: 2}
+    - rid: 6610870990842363968
+      type: {class: AttackMovementData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: AttackMovementData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          Velocity: 4

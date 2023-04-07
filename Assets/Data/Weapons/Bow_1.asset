@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aa2adc92599fb4eb807cabed06c81c, type: 3}
+  m_Name: Bow_1
+  m_EditorClassIdentifier: 
+  <NumberOfAttacks>k__BackingField: 1
+  <WeaponName>k__BackingField: Basic Bow
+  <WeaponDescription>k__BackingField: A basic wooden bow that fires a generic arrow
+  <PickupSprite>k__BackingField: {fileID: -978983873, guid: a787ad60522155e428cfd22746459646,
+    type: 3}
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: 4a75157900a785142831f1986e829e16,
+    type: 2}
+  componentDatas:
+  - rid: 6610870990842363951
+  - rid: 520146092824985611
+  - rid: 520146092824985606
+  - rid: 520146092824985603
+  references:
+    version: 2
+    RefIds:
+    - rid: 520146092824985603
+      type: {class: WeaponSpriteData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponSpriteData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          AttackPhases:
+          - Name: Anticipation
+            Phase: 0
+            Sprites:
+            - {fileID: 1587888082, guid: f762f65706d238f448ee68f05ef21635, type: 3}
+            - {fileID: 725383913, guid: f762f65706d238f448ee68f05ef21635, type: 3}
+          - Name: Idle
+            Phase: 1
+            Sprites:
+            - {fileID: 725383913, guid: f762f65706d238f448ee68f05ef21635, type: 3}
+          - Name: Action
+            Phase: 2
+            Sprites:
+            - {fileID: 2029930650, guid: f762f65706d238f448ee68f05ef21635, type: 3}
+            - {fileID: 1786957765, guid: f762f65706d238f448ee68f05ef21635, type: 3}
+            - {fileID: 1678871828, guid: f762f65706d238f448ee68f05ef21635, type: 3}
+            - {fileID: -935531357, guid: f762f65706d238f448ee68f05ef21635, type: 3}
+    - rid: 520146092824985606
+      type: {class: WeaponDrawData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponDrawData
+        repeatData: 0
+        data:
+        - Name: Attack 1
+          curve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 0
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1.0625
+              value: 0.97172546
+              inSlope: 2
+              outSlope: 2
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 0
+          drawTime: 0.1
+    - rid: 520146092824985611
+      type: {class: OptionalAttachmentPointData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: OptionalAttachmentPointData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          Sprite: {fileID: 1557813892, guid: f90775480959d9e4c8eea9313877b2bc, type: 3}
+          UseSprite: 1
+    - rid: 6610870990842363951
+      type: {class: AttackRangedData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: AttackRangedData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          debug: 0
+          AttackData:
+          - offset: {x: 0.92, y: 0.2}
+            direction: {x: 1, y: 0}
+            projectileData: {fileID: 11400000, guid: a1760235ac7d8bb4bb30d7a56f7ecad0,
+              type: 2}

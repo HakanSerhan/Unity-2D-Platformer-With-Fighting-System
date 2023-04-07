@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aa2adc92599fb4eb807cabed06c81c, type: 3}
+  m_Name: Sword_4
+  m_EditorClassIdentifier: 
+  <NumberOfAttacks>k__BackingField: 3
+  <WeaponName>k__BackingField: Crimson Scimitar
+  <WeaponDescription>k__BackingField: A fierce scimitar that glints red. Is that
+    blood or just the sword? Probably blood.
+  <PickupSprite>k__BackingField: {fileID: 478046422, guid: a787ad60522155e428cfd22746459646,
+    type: 3}
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: c89168786ecca584eabe95a0effb9561,
+    type: 2}
+  componentDatas:
+  - rid: 6610870990842363963
+  - rid: 10418016985546752
+  - rid: 6610870990842363964
+  references:
+    version: 2
+    RefIds:
+    - rid: 10418016985546752
+      type: {class: DamageOnHitboxActionData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: DamageOnHitboxActionData
+        repeatData: 0
+        data: []
+    - rid: 6610870990842363963
+      type: {class: AttackMovementData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: AttackMovementData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          Velocity: 3
+        - AttackName: Attack 2
+          Velocity: 4
+        - AttackName: Attack 3
+          Velocity: 2
+    - rid: 6610870990842363964
+      type: {class: WeaponHitboxData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponHitboxData
+        repeatData: 1
+        data:
+        - AttackName: Attack 3
+          debug: 0
+          <Hitbox>k__BackingField:
+            serializedVersion: 2
+            x: 1
+            y: 0.25
+            width: 2
+            height: 2.5
+        <DamageableLayers>k__BackingField:
+          serializedVersion: 2
+          m_Bits: 512

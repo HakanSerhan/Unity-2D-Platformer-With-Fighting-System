@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aa2adc92599fb4eb807cabed06c81c, type: 3}
+  m_Name: Sword_2
+  m_EditorClassIdentifier: 
+  <NumberOfAttacks>k__BackingField: 3
+  <WeaponName>k__BackingField: Fire Scimitar
+  <WeaponDescription>k__BackingField: A simple scimitar that casts a fireball spell
+    on the third attack
+  <PickupSprite>k__BackingField: {fileID: -1569613650, guid: a787ad60522155e428cfd22746459646,
+    type: 3}
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: c89168786ecca584eabe95a0effb9561,
+    type: 2}
+  componentDatas:
+  - rid: 6610870990842363957
+  - rid: 6610870990842363959
+  - rid: 6610870990842363958
+  - rid: 520146092824985618
+  references:
+    version: 2
+    RefIds:
+    - rid: 520146092824985618
+      type: {class: WeaponSpriteData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponSpriteData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          AttackPhases:
+          - Name: Action
+            Phase: 2
+            Sprites:
+            - {fileID: -1108959796, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: 1629369180, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: -1261530172, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: 1894633788, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: 1172500557, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+        - AttackName: Attack 2
+          AttackPhases:
+          - Name: Action
+            Phase: 2
+            Sprites:
+            - {fileID: 1184720942, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: -1852179866, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: -1620339292, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: -431374691, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: -954660887, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+        - AttackName: Attack 3
+          AttackPhases:
+          - Name: Action
+            Phase: 2
+            Sprites:
+            - {fileID: 404778963, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: 657280085, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: 1042145754, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: -1884515332, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+            - {fileID: -1074870686, guid: f422fb9e7ee78af49837d8913d55ba24, type: 3}
+    - rid: 6610870990842363957
+      type: {class: AttackMovementData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: AttackMovementData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          Velocity: 3
+          Angle: {x: 1, y: 0}
+        - AttackName: Attack 2
+          Velocity: 4
+          Angle: {x: 1, y: 0}
+        - AttackName: Attack 3
+          Velocity: 2
+          Angle: {x: 1, y: 6}
+    - rid: 6610870990842363958
+      type: {class: WeaponHitboxData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponHitboxData
+        repeatData: 1
+        data:
+        - AttackName: Attack 1
+          debug: 0
+          <Hitbox>k__BackingField:
+            serializedVersion: 2
+            x: 1
+            y: 0.25
+            width: 2
+            height: 2.5
+        <DamageableLayers>k__BackingField:
+          serializedVersion: 2
+          m_Bits: 512
+    - rid: 6610870990842363959
+      type: {class: AttackRangedData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: AttackRangedData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          debug: 0
+          AttackData: []
+        - AttackName: Attack 2
+          debug: 0
+          AttackData: []
+        - AttackName: Attack 3
+          debug: 0
+          AttackData:
+          - offset: {x: 0, y: 0}
+            direction: {x: 1, y: 0}
+            projectileData: {fileID: 11400000, guid: 981967b295f208e4cbf0375ab31d5b96,
+              type: 2}

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aa2adc92599fb4eb807cabed06c81c, type: 3}
+  m_Name: Tome_3
+  m_EditorClassIdentifier: 
+  <NumberOfAttacks>k__BackingField: 1
+  <WeaponName>k__BackingField: Shield Tome
+  <WeaponDescription>k__BackingField: A Tome that casts a protective bubble around
+    the player, absorbing damage from all directions
+  <PickupSprite>k__BackingField: {fileID: -478542938, guid: a787ad60522155e428cfd22746459646,
+    type: 3}
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: 24531ec137faccc4889f79028f43b0b6,
+    type: 2}
+  componentDatas:
+  - rid: 2475218491376926723
+  - rid: 2475218491376926722
+  - rid: 520146092620513280
+  references:
+    version: 2
+    RefIds:
+    - rid: 520146092620513280
+      type: {class: WeaponSpriteData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponSpriteData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          AttackPhases:
+          - Name: Anticipation
+            Phase: 0
+            Sprites:
+            - {fileID: 2061058481, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -900589747, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1687929474, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1738376652, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1481994443, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1721986586, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -244726047, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -8395865, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 17735780, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -818900504, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1435288318, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1282231354, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+          - Name: Idle
+            Phase: 1
+            Sprites:
+            - {fileID: -779137823, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -1556992060, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 923427480, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 2045224383, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: -472732825, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+          - Name: Cancel
+            Phase: 3
+            Sprites:
+            - {fileID: -383167376, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 2007253709, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 285217704, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1757489172, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+            - {fileID: 1408637278, guid: c8fe7892015b8f1479718f4570a1d685, type: 3}
+    - rid: 2475218491376926722
+      type: {class: CancelOnInputReleaseData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: CancelOnInputReleaseData
+    - rid: 2475218491376926723
+      type: {class: BlockData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: BlockData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          <BlockWindowStart>k__BackingField:
+            <Duration>k__BackingField: 0.6666667
+            <Phase>k__BackingField: 0
+          <BlockWindowEnd>k__BackingField:
+            <Duration>k__BackingField: 0
+            <Phase>k__BackingField: 3
+          <BlockParticles>k__BackingField: {fileID: 6240072112886026631, guid: 25aeb624df7917e4aa9cbe2204b85ed6,
+            type: 3}
+          <BlockParticlesOffset>k__BackingField: {x: 0, y: 0}
+          <BlockDirections>k__BackingField:
+          - MinAngle: -180
+            MaxAngle: 180
+            DamageAbsorption: 1
+            KnockbackAbsorption: 0.75
+            PoiseDamageAbsorption: 1

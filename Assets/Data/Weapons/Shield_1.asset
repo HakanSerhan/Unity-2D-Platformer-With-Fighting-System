@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aa2adc92599fb4eb807cabed06c81c, type: 3}
+  m_Name: Shield_1
+  m_EditorClassIdentifier: 
+  <NumberOfAttacks>k__BackingField: 1
+  <WeaponName>k__BackingField: Basic Shield
+  <WeaponDescription>k__BackingField: Just a basic shield that can be used to block
+    and parry
+  <PickupSprite>k__BackingField: {fileID: 2085330444, guid: a787ad60522155e428cfd22746459646,
+    type: 3}
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: 5f7728ba97fe3404a9e025718341f4a7,
+    type: 2}
+  componentDatas:
+  - rid: 6610871290898677760
+  - rid: 1176865797506072576
+  - rid: 1176865750088417281
+  - rid: 1176865634514632707
+  - rid: 6610871235750395905
+  - rid: 6610871200677888000
+  references:
+    version: 2
+    RefIds:
+    - rid: 1176865634514632707
+      type: {class: ParryData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: ParryData
+        repeatData: 0
+        data:
+        - attackName: Attack 1
+          <DamageAbsorption>k__BackingField: 1
+          <ParryWindowStart>k__BackingField: 0
+          <ParryWindowEnd>k__BackingField: 0.26666668
+          <ParryHitbox>k__BackingField:
+            serializedVersion: 2
+            x: 0.5
+            y: -0.25
+            width: 1
+            height: 2
+        <ParryParticlesPrefab>k__BackingField: {fileID: 6240072112886026631, guid: 25aeb624df7917e4aa9cbe2204b85ed6,
+          type: 3}
+        <ParryParticlesOffset>k__BackingField: {x: 1, y: 0}
+        <ParryableLayer>k__BackingField:
+          serializedVersion: 2
+          m_Bits: 128
+    - rid: 1176865750088417281
+      type: {class: KnockbackOnParriedData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: KnockbackOnParriedData
+        repeatData: 0
+        data:
+        - attackName: Attack 1
+          <KnockbackAngle>k__BackingField: {x: 1, y: 1}
+          <KnockbackStrength>k__BackingField: 10
+    - rid: 1176865797506072576
+      type: {class: DamageOnParriedData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: DamageOnParriedData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          <DamageAmount>k__BackingField: 25
+    - rid: 6610871200677888000
+      type: {class: WeaponSpriteData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponSpriteData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          AttackPhases:
+          - Name: Anticipation
+            Phase: 0
+            Sprites:
+            - {fileID: -1301772953, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -588364960, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -1326210107, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -977153957, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 1973115893, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -1749220865, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+          - Name: Idle
+            Phase: 1
+            Sprites:
+            - {fileID: 644732473, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 1114811131, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -1626478624, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 421953397, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+          - Name: Break
+            Phase: 4
+            Sprites:
+            - {fileID: -1597258732, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 985262692, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -1902856101, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -710710676, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+          - Name: Parry
+            Phase: 5
+            Sprites:
+            - {fileID: 1708822686, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 1837800343, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -988102552, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 1777614206, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+          - Name: Cancel
+            Phase: 3
+            Sprites:
+            - {fileID: -1458862853, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: -1643390664, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 313624338, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+            - {fileID: 2118497760, guid: 217f11e83e5a9874aab38b60e50e6a43, type: 3}
+    - rid: 6610871235750395905
+      type: {class: WeaponHoldData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponHoldData
+    - rid: 6610871290898677760
+      type: {class: BlockData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: BlockData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          <BlockWindowStart>k__BackingField:
+            <Duration>k__BackingField: 0.2666667
+            <Phase>k__BackingField: 0
+          <BlockWindowEnd>k__BackingField:
+            <Duration>k__BackingField: 0
+            <Phase>k__BackingField: 3
+          <BlockParticles>k__BackingField: {fileID: 6240072112886026631, guid: 25aeb624df7917e4aa9cbe2204b85ed6,
+            type: 3}
+          <BlockParticlesOffset>k__BackingField: {x: 1, y: 0}
+          <BlockDirections>k__BackingField:
+          - MinAngle: -90
+            MaxAngle: 90
+            DamageAbsorption: 0.75
+            KnockbackAbsorption: 0.25
+            PoiseDamageAbsorption: 0.75

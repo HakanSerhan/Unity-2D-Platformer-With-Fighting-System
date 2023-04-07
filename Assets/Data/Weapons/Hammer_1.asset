@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aa2adc92599fb4eb807cabed06c81c, type: 3}
+  m_Name: Hammer_1
+  m_EditorClassIdentifier: 
+  <NumberOfAttacks>k__BackingField: 3
+  <WeaponName>k__BackingField: Togruls Hammer
+  <WeaponDescription>k__BackingField: "a\u015Flsdml\u015Fdasnnl\u015Fadad"
+  <PickupSprite>k__BackingField: {fileID: 0}
+  <AnimatorController>k__BackingField: {fileID: 0}
+  componentDatas:
+  - rid: 10418020365107202
+  - rid: 10418020365107204
+  - rid: 10418020365107201
+  references:
+    version: 2
+    RefIds:
+    - rid: 10418020365107201
+      type: {class: WeaponSpriteData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: WeaponSpriteData
+        repeatData: 0
+        data:
+        - AttackName: Attack 1
+          AttackPhases: []
+        - AttackName: Attack 2
+          AttackPhases: []
+        - AttackName: Attack 3
+          AttackPhases: []
+    - rid: 10418020365107202
+      type: {class: AttackMovementData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: AttackMovementData
+        repeatData: 0
+        data: []
+    - rid: 10418020365107204
+      type: {class: KnockbackOnHitboxActionData, ns: Bardent.Weapons, asm: Assembly-CSharp}
+      data:
+        <ComponentName>k__BackingField: KnockbackOnHitboxActionData
+        repeatData: 0
+        data:
+        - attackName: 
+          <KnockbackAngle>k__BackingField: {x: 2, y: 3}
+          <KnockbackStrength>k__BackingField: 5

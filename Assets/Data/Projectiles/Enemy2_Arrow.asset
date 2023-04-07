@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343518d098693224bbeab2968ac20599, type: 3}
+  m_Name: Enemy2_Arrow
+  m_EditorClassIdentifier: 
+  <ProjectilePrefab>k__BackingField: {fileID: 8186764712658631026, guid: 7251b08fbf27ed7419dc8fd9f6aef71b,
+    type: 3}
+  <interactableLayers>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 512
+  <ComponentDatas>k__BackingField:
+  - rid: 520146053750325290
+  - rid: 520146074619609098
+  - rid: 520146092824985609
+  - rid: 520146170236633110
+  - rid: 520146186656022528
+  - rid: 520146186656022529
+  - rid: 520146328609619968
+  - rid: 520146328609619974
+  - rid: 520146663966769152
+  - rid: 520146663966769153
+  - rid: 1176865901992214529
+  references:
+    version: 2
+    RefIds:
+    - rid: 520146053750325290
+      type: {class: ProjectileMovementData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ProjectileMovementData
+        ApplyContinuously: 0
+        Velocity: 12.5
+    - rid: 520146074619609098
+      type: {class: DelayedGravityData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: DelayedGravityData
+        Gravity: 4
+        DistanceDelay: 7
+        TimeDelay: -1
+    - rid: 520146092824985609
+      type: {class: ProjectileGraphicsControllerData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ProjectileGraphicsControllerData
+        projectileSprite: {fileID: 1557813892, guid: f90775480959d9e4c8eea9313877b2bc,
+          type: 3}
+    - rid: 520146170236633110
+      type: {class: RotateTowardsMovementData, ns: , asm: Assembly-CSharp}
+      data:
+        name: RotateTowardsMovementData
+    - rid: 520146186656022528
+      type: {class: HitboxData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: HitboxData
+        Hitbox:
+          serializedVersion: 2
+          x: -1.1
+          y: -0.15625
+          width: 1.4
+          height: 0.3125
+        CompensateForVelocity: 1
+        LayerMask:
+          serializedVersion: 2
+          m_Bits: 8192
+        DoInitialCheck: 1
+    - rid: 520146186656022529
+      type: {class: StickInEnvironmentData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: StickInEnvironmentData
+        LayerMask:
+          serializedVersion: 2
+          m_Bits: 256
+    - rid: 520146328609619968
+      type: {class: HitLineData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: HitLineData
+        LayerMask:
+          serializedVersion: 2
+          m_Bits: 256
+        DoInitialCheck: 1
+    - rid: 520146328609619974
+      type: {class: ProjectileDamageData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ProjectileDamageData
+        DamageAmount: 10
+        LayerMask:
+          serializedVersion: 2
+          m_Bits: 8192
+    - rid: 520146663966769152
+      type: {class: DisableDamageOnStickData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: DisableDamageOnStickData
+    - rid: 520146663966769153
+      type: {class: DespawnProjectileOnStickData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: DespawnProjectileOnStickData
+        <DespawnTime>k__BackingField: 5
+    - rid: 1176865901992214529
+      type: {class: ProjectileParryData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ProjectileParryData
+        <ParryGameObject>k__BackingField: {fileID: 8186764712658631026, guid: 7251b08fbf27ed7419dc8fd9f6aef71b,
+          type: 3}
+        <ParryProjectileData>k__BackingField: {fileID: 11400000, guid: 93c96a48c90c6e648824d18a97c2a225,
+          type: 2}
+        <ColliderInfo>k__BackingField:
+          serializedVersion: 2
+          x: 0.2
+          y: 0
+          width: 1.9
+          height: 0.6

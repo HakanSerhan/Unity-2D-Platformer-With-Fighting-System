@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343518d098693224bbeab2968ac20599, type: 3}
+  m_Name: Fireball_1
+  m_EditorClassIdentifier: 
+  <ProjectilePrefab>k__BackingField: {fileID: 8186764712658631026, guid: 7251b08fbf27ed7419dc8fd9f6aef71b,
+    type: 3}
+  <interactableLayers>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 512
+  <ComponentDatas>k__BackingField:
+  - rid: 520146328609619969
+  - rid: 520146328609619970
+  - rid: 520146328609619971
+  - rid: 520146328609619972
+  - rid: 520146667764187136
+  - rid: 520146667764187137
+  - rid: 520146667764187138
+  references:
+    version: 2
+    RefIds:
+    - rid: 520146328609619969
+      type: {class: HitboxData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: HitboxData
+        Hitbox:
+          serializedVersion: 2
+          x: -0.87
+          y: -0.375
+          width: 1.25
+          height: 0.75
+        CompensateForVelocity: 0
+        LayerMask:
+          serializedVersion: 2
+          m_Bits: 768
+        DoInitialCheck: 1
+    - rid: 520146328609619970
+      type: {class: ProjectileMovementData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ProjectileMovementData
+        ApplyContinuously: 0
+        Velocity: 15
+    - rid: 520146328609619971
+      type: {class: ProjectileGraphicsControllerData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ProjectileGraphicsControllerData
+        projectileSprite: {fileID: 402122680, guid: f90775480959d9e4c8eea9313877b2bc,
+          type: 3}
+    - rid: 520146328609619972
+      type: {class: ParticlesData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ParticlesData
+        <trailPrefab>k__BackingField: {fileID: 2268897439260401120, guid: 9a70ab7df62b0ed42a21847a8f5f1756,
+          type: 3}
+    - rid: 520146667764187136
+      type: {class: DespawnOnTouchLayerData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: DespawnOnTouchLayerData
+        <Layer>k__BackingField:
+          serializedVersion: 2
+          m_Bits: 256
+    - rid: 520146667764187137
+      type: {class: ProjectileDamageData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ProjectileDamageData
+        DamageAmount: 15
+        LayerMask:
+          serializedVersion: 2
+          m_Bits: 512
+    - rid: 520146667764187138
+      type: {class: ParticlesOnDisableData, ns: Bardent.Projectiles, asm: Assembly-CSharp}
+      data:
+        name: ParticlesOnDisableData
+        <DespawnParticles>k__BackingField: {fileID: 3331873728183600638, guid: 358fd52c41bf79446a134aabb33bdc76,
+          type: 3}
